@@ -1,0 +1,104 @@
+.tictactoe{
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sq{
+    border: 4px solid black;
+}
+.square{
+    background: rgb(81, 122, 236);
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:white;
+    font-size:4rem ;
+    border: 1px solid black;
+}
+.square:hover{
+    background-color: rgb(128, 224, 224);
+}
+.square.clicked{
+    background-color: blue;
+    cursor:not-allowed;
+}
+.App{
+    height: 100vh;
+    background: rgba(255, 223, 244, 0.808);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    justify-content: center;
+    grid-gap : 4px;
+
+}
+.end-game-screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.btn{
+    background: rgba(233, 219, 219, 0.582);
+    color: white;
+    border:2 px solid rgb(63,118,170);
+    font-size: 2rem;
+    margin-bottom : 1rem;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-out;
+    max-height: 7rem;
+}
+
+.btn:hover{
+    background: rgb(63,118,170);
+    color: aliceblue;
+    border: 2px solid rgb(27, 225, 225);
+}
+.btn:active{
+    background-color: rgb(238, 213, 213);
+    box-shadow: 0 5px white;
+    transform: translateY(8px);
+}
+.win-text{
+    color: wheat;
+    font-size: 4rem;
+    margin: 2rem;
+}
+.win-history{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.win-history1{
+    color: black;
+    font-size: 3vh;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
